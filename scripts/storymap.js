@@ -197,9 +197,9 @@ $(window).on('load', function() {
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
         .append('<p class="description">' + c['Description'] + '</p>')
-        .append('<p class="">' + c['Instagram'] + '</p>')
-        .append('<p class="">' + c['Facebook'] + '</p>')
-        .append('<p class="">' + c['Web'] + '</p>');
+        .append('<p class="">' + c['Instagram'] + '</div>')
+        .append('<div><i>' + ikona + '</i><a href="https://www.facebook.com/' + c['Facebook'] + '">' + c['Facebook'] + '</a></div>')
+        .append('<div><i>' + ikona + '</i><a href="' + c['Web'] + '">' + c['Web'] + '</a></div>');
 
       $('#contents').append(container);
 
