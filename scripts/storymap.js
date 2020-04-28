@@ -196,7 +196,10 @@ $(window).on('load', function() {
         .append('<p class="">' + c['Authors'] + '</p>')
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
-        .append('<p class="description">' + c['Description'] + '</p>');
+        .append('<p class="description">' + c['Description'] + '</p>')
+        .append('<p class="">' + c['Instagram'] + '</p>')
+        .append('<p class="">' + c['Facebook'] + '</p>')
+        .append('<p class="">' + c['Web'] + '</p>');
 
       $('#contents').append(container);
 
