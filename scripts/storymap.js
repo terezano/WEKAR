@@ -190,7 +190,9 @@ $(window).on('load', function() {
       var year = c['Year'];
       if (c['Year'] == '')
         year = 'nestálá expozice';
-
+      
+      var ikona = '';
+      
       container
         .append('<p class="chapter-header">' + c['Chapter'] + ' ' + '(' + year + ')' + '</p>')
         .append('<p class="">' + c['Authors'] + '</p>')
