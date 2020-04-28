@@ -187,8 +187,12 @@ $(window).on('load', function() {
         }).append(media).after(source);
       }
 
+      var year = c['Year'];
+      if (c['Year'] == '')
+        year = 'nestálá expozice';
+
       container
-        .append('<p class="chapter-header">' + c['Chapter'] + ' ' + '(' + c['Year'] + ')' + '</p>')
+        .append('<p class="chapter-header">' + c['Chapter'] + ' ' + '(' + year + ')' + '</p>')
         .append('<p class="">' + c['Authors'] + '</p>')
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
