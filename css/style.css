@@ -131,7 +131,8 @@ h4 {
   transform: translateY(-50%);
 }
 
-.a {
+.a, a:visited, a:hover {
+  color: #0000ff;
   line-height: 10px;
   font-size: 12px;
   vertical-align: text-top;
