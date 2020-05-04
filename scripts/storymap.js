@@ -211,23 +211,23 @@ $(window).on('load', function() {
         .append('<p class="description">' + c['Description'] + '</p>')
 
         if (c['Instagram'] !== "")
-          container.append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram'] + '/">' + '&#64;' + c['Instagram'] + '</a></div>')
+          container.append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram'] + '/" class="link">' + '&#64;' + c['Instagram'] + '</a></div>')
         
         if (c['Facebook'] !== "")
-          container.append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook'] + '">' + c['Facebook'] + '</a></div>')
+          container.append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook'] + '" class="link">' + c['Facebook'] + '</a></div>')
         
         if (c['Web'] !== "")
-          container.append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web'] + '">' + c['Web'] + '</a></div>');
+          container.append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web'] + '" class="link">' + c['Web'] + '</a></div>');
 
         container.append('<p></p>')
         if (c['Instagram2'] !== "")
-          container.append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram2'] + '/">' + '&#64;' + c['Instagram2'] + '</a></div>')
+          container.append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram2'] + '/" class="link">' + '&#64;' + c['Instagram2'] + '</a></div>')
 
         if (c['Facebook2'] !== "")
-          container.append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook2'] + '">' + c['Facebook2'] + '</a></div>')
+          container.append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook2'] + '" class="link">' + c['Facebook2'] + '</a></div>')
 
         if (c['Web2'] !== "")
-          container.append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web2'] + '">' + c['Web2'] + '</a></div>');
+          container.append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web2'] + '" class="link">' + c['Web2'] + '</a></div>');
 
       $('#contents').append(container);
 
