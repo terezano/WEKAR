@@ -209,18 +209,18 @@ $(window).on('load', function() {
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
         .append('<p class="description">' + c['Description'] + '</p>')
-        .append('<div><img class="icon" src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram'] + '/">' + '&#64; ' + c['Instagram'] + '</a></div>')
-        .append('<div><img class="icon" src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook'] + '">' + c['Facebook'] + '</a></div>')
-        .append('<div><img class="icon" src="./icons/web.png" /><a href="' + c['Web'] + '">' + c['Web'] + '</a></div>');
+        .append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram'] + '/">' + '&#64; ' + c['Instagram'] + '</a></div>')
+        .append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook'] + '">' + c['Facebook'] + '</a></div>')
+        .append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web'] + '">' + c['Web'] + '</a></div>');
 
         if (c['Instagram2'] !== "")
-          container.append('<div><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram2'] + '/">' + '&#64; ' + c['Instagram2'] + '</a></div>')
+          container.append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram2'] + '/">' + '&#64; ' + c['Instagram2'] + '</a></div>')
 
         if (c['Facebook2'] !== "")
-          container.append('<div><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook2'] + '">' + c['Facebook2'] + '</a></div>')
+          container.append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook2'] + '">' + c['Facebook2'] + '</a></div>')
 
         if (c['Web2'] !== "")
-          container.append('<div><img src="./icons/web.png" /><a href="' + c['Web2'] + '">' + c['Web2'] + '</a></div>');
+          container.append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web2'] + '">' + c['Web2'] + '</a></div>');
 
       $('#contents').append(container);
 
