@@ -88,9 +88,8 @@ $(window).on('load', function() {
     var chapterContainerMargin = 70;
 
     document.title = getSetting('_mapTitle');
-    $('#title').append('<p class="header-p">PRŮVODCE</p>');
+    $('#title').append('<h2>PRŮVODCE</h2>');
     $('#title').append('<h3>' + getSetting('_mapTitle') + '</h3>');
-    $('#title').append('<p class="header-p">FESTIVALEM</p>');
     $('#title').append('<h4>' + getSetting('_mapSubtitle') + '</h4>');
     $('#title').append('<p class="main-p">' + getSetting('_mapParagraph1') + '</p>');
     $('#title').append('<p class="main-p">' + getSetting('_mapParagraph2') + '</p>');
