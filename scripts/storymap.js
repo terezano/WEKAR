@@ -203,17 +203,24 @@ $(window).on('load', function() {
       if (c['Year'] == '')
         year = 'nestálá expozice';
       
-      var ikona = '';
-      
       container
         .append('<p class="chapter-header">' + c['Chapter'] + ' ' + '(' + year + ')' + '</p>')
         .append('<p class="">' + c['Authors'] + '</p>')
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
         .append('<p class="description">' + c['Description'] + '</p>')
-        .append('<p class="">' + c['Instagram'] + '</div>')
-        .append('<div><i>' + ikona + '</i><a href="https://www.facebook.com/' + c['Facebook'] + '">' + c['Facebook'] + '</a></div>')
-        .append('<div><i>' + ikona + '</i><a href="' + c['Web'] + '">' + c['Web'] + '</a></div>');
+        .append('<div><img src="./icons/ig.png" width="20px" /><a href="https://www.instagram.com/' + c['Instagram'] + '/">' + '&#64; ' + c['Instagram'] + '</a></div>')
+        .append('<div><img src="/icons/fb.png" width="20px" /><a href="https://www.facebook.com/' + c['Facebook'] + '">' + c['Facebook'] + '</a></div>')
+        .append('<div><img src="/icons/web.png" width="20px" /><a href="' + c['Web'] + '">' + c['Web'] + '</a></div>');
+
+        if (c['Instagram2'] !== "")
+          container.append('<div><img src="./icons/ig.png" width="20px" /><a href="https://www.instagram.com/' + c['Instagram2'] + '/">' + '&#64; ' + c['Instagram2'] + '</a></div>')
+
+        if (c['Facebook2'] !== "")
+          container.append('<div><img src="/icons/fb.png" width="20px" /><a href="https://www.facebook.com/' + c['Facebook2'] + '">' + c['Facebook2'] + '</a></div>')
+
+        if (c['Web2'] !== "")
+          container.append('<div><img src="/icons/web.png" width="20px" /><a href="' + c['Web2'] + '">' + c['Web2'] + '</a></div>');
 
       $('#contents').append(container);
 
