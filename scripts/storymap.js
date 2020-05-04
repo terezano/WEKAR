@@ -61,13 +61,13 @@ $(window).on('load', function() {
       maxZoom: 18
     }).addTo(map);*/
     
-    L.tileLayer('https://api.maptiler.com/maps/fbb52c74-484a-4292-b9b2-62fa4d37d20c/?key=a9VJXsogehAJrsZJfQum#11.7/49.59142/17.28022', {
+    L.tileLayer('https://api.maptiler.com/maps/fbb52c74-484a-4292-b9b2-62fa4d37d20c/?key=a9VJXsogehAJrsZJfQum', {
     attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
     maxZoom: 18,
     id: 'maptiler',
     zoomOffset: -1,
     accessToken: 'not-needed',
-    style: 'https://api.maptiler.com/maps/fbb52c74-484a-4292-b9b2-62fa4d37d20c/style.json?key=a9VJXsogehAJrsZJfQum',
+    //style: 'https://api.maptiler.com/maps/fbb52c74-484a-4292-b9b2-62fa4d37d20c/style.json?key=a9VJXsogehAJrsZJfQum',
 }).addTo(map);
   }
 
