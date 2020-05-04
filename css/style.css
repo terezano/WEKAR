@@ -44,6 +44,7 @@ body {
 }
 
 #title {
+  font-size: 40px;
   position: absolute;
   left: 0;
   top: 203px;
@@ -59,6 +60,12 @@ body {
 
 h3 {
   margin: 0;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.small{
+ font-size: 20px;
 }
 
 .chapter-container {
@@ -113,7 +120,7 @@ h3 {
 
 .description {
   margin: 20px;
-  text-align: left;
+  text-align: center;
   font-size: 11pt;
   padding: 20px;
 }
