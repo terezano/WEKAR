@@ -60,6 +60,8 @@ body {
 
 h3 {
   margin: 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .chapter-container {
