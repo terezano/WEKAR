@@ -64,10 +64,16 @@ h2 {
   font-weight: bold;
 }
 
+@font-face {
+  font-family: streetart_font;
+  src: url(baveuse.ttf);
+}
+
 h3 {
   margin: 0;
   font-size: 30px;
   font-weight: bold;
+  font-family: streetart_font;
 }
 
 h4 {
