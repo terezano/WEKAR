@@ -67,7 +67,7 @@ $(window).on('load', function() {
     id: 'maptiler',
     zoomOffset: -1,
     accessToken: 'not-needed',
-    style: 'https://api.maptiler.com/maps/fbb52c74-484a-4292-b9b2-62fa4d37d20c/style.json?key=a9VJXsogehAJrsZJfQum',
+    //style: 'https://api.maptiler.com/maps/fbb52c74-484a-4292-b9b2-62fa4d37d20c/style.json?key=a9VJXsogehAJrsZJfQum',
 }).addTo(map);
   }
 
