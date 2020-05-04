@@ -124,11 +124,17 @@ h4 {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-
+  padding-right: 10px;
   /* Three lines that center vertically */
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.a {
+  line-height: 10px;
+  font-size: 12px;
+  vertical-align: text-top;
 }
 
 .icon {
@@ -168,7 +174,8 @@ h4 {
 }
 
 .description {
-  margin: 20px;
+  margin: 10px;
+  line-height: 25px;
   text-align: center;
   font-size: 11pt;
   padding: 20px;
