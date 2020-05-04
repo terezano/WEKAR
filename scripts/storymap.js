@@ -89,7 +89,7 @@ $(window).on('load', function() {
 
     document.title = getSetting('_mapTitle');
     $('#title').append('<h3>' + getSetting('_mapTitle') + '</h3>');
-    $('#title').append('<small>' + getSetting('_mapSubtitle') + '</small>');
+    $('#title').append('<h4>' + getSetting('_mapSubtitle') + '</h4>');
 
     // Load tiles
     addBaseMap();
