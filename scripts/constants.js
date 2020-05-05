@@ -7,6 +7,7 @@ var constants = {
   _mapSubtitle: 'Storymap Subtitle',
   _mapParagraph1: 'Storymap Paragraph1',
   _mapParagraph2: 'Storymap Paragraph2',
+  _mapParagraph3: 'Storymap Paragraph3',
   // Credits
 	_authorName: 'Author Name',
 	_authorURL: 'Author Email or Website',

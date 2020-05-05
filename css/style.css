@@ -16,19 +16,19 @@ body {
 
 #narration {
   position: absolute;
-  top: 203px;
   width: 100vw;
   height: calc(100vh - 203px);
-  z-index: 80;
+  z-index: 0;
 }
 
 #contents {
   padding: 0;
-  width: 100%;
+  width: 83%;
   margin-top: 0; /*Adjust if Title header needs more space */
   height: 100%; /* Adjust to fit max Description length, one setting for all; alternative is 100% */
   overflow-y: scroll;
   overflow-x: hidden;
+  
 }
 
 #top {
@@ -37,7 +37,7 @@ body {
 }
 
 #space-at-the-bottom {
-  height: 50px;
+  height: 50 px;
   margin: 0;
   text-align: center;
   padding-top: 150px;
@@ -52,7 +52,6 @@ body {
   width: 100vw;
   z-index: 100;
   margin: 0;
-  padding: 20px 0;
   visibility: hidden;
   font-weight: bold;
   text-align: center;
@@ -64,8 +63,9 @@ body {
 }
 
 h2 {
-  margin: 10px 0 0 0;
-  font-size: 30px;
+  margin: 10px 0 0 -169px;
+  padding-left: 65px;
+  font-size: 40px;
   font-weight: bold;
   font-family: streetart_font;
   color: #e99b49;
@@ -73,10 +73,8 @@ h2 {
 }
 
 h3 {
-  margin: 15px 0 0 0;
+  margin: 10px 10px 10px -100px;
   font-size: 50px;
-  width: 80%;
-  padding-left: 10%;
   font-weight: bold;
   font-family: streetart_font;
   color: #ab5155;
@@ -84,7 +82,7 @@ h3 {
 }
 
 h4 {
-  margin: 30px 0 0 0;
+  margin: 30px 0px 0px -120px;
   font-size: 20px;
   font-weight: bold;
   font-family: streetart_font;
@@ -93,13 +91,13 @@ h4 {
 }
 
 .main-p {
-  margin: 30px 0 0 0;
+  margin: 30px 0px 0px -10px;
   font-size: 16px;
   font-weight: 300;
   text-align: center;
   line-height: 25px;
   width: 80%;
-  padding-left: 10%;
+  padding-left: 10px;
 }
 
 .small{
@@ -184,19 +182,22 @@ h4 {
 }
 
 .in-focus {
-  opacity: 0;
+  opacity: 1.0;
 }
 
 .out-focus {
-  opacity: 0;
+  opacity: 0.3;
 }
 
 .leaflet-control-attribution {
   visibility: hidden;
+  height: 16px;
+  width: 800px;
+  position: right;
 }
 
 .leaflet-marker-icon {
-  opacity: 0;
+  opacity: 1;
 }
 
 a.source, a.source:visited {

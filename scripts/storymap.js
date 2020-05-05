@@ -88,13 +88,15 @@ $(window).on('load', function() {
     var chapterContainerMargin = 70;
 
     document.title = getSetting('_mapTitle');
-    $('#title').append('<h2>PRŮVODCE</h2>');
+
     $('#title').append('<h3>' + getSetting('_mapTitle') + '</h3>');
     $('#title').append('<h4>' + getSetting('_mapSubtitle') + '</h4>');
     $('#title').append('<p class="main-p">' + getSetting('_mapParagraph1') + '</p>');
     $('#title').append('<p class="main-p">' + getSetting('_mapParagraph2') + '</p>');
-
-    // Load tiles
+	$('#title').append('<p class="main-p">' + getSetting('_mapParagraph3') + '</p>');
+    
+	
+	// Load tiles
     addBaseMap();
 
     // Add zoom controls if needed
@@ -256,7 +258,7 @@ $(window).on('load', function() {
 
       // Make title disappear on scroll
       if (currentPosition < 200) {
-        $('#title').css('opacity', 1 - Math.min(1, currentPosition / 100));
+        $('#title').css('opacity', 1 - Math.min(1, currentPosition / 10));
       }
 
       for (i = 0; i < pixelsAbove.length - 1; i++) {
