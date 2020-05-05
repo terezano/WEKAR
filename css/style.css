@@ -37,7 +37,7 @@ body {
 }
 
 #space-at-the-bottom {
-  height: 200px;
+  height: 50px;
   margin: 0;
   text-align: center;
   padding-top: 150px;
@@ -48,7 +48,7 @@ body {
   position: absolute;
   left: 0;
   top: 203px;
-  background-color: white;
+  background-color: #bbbbbb;
   width: 100vw;
   z-index: 100;
   margin: 0;
@@ -58,20 +58,62 @@ body {
   text-align: center;
 }
 
-h3 {
-  margin: 0;
-  font-size: 33px;
+@font-face {
+  font-family: streetart_font;
+  src: url(baveuse.ttf);
+}
+
+h2 {
+  margin: 10px 0 0 0;
+  font-size: 30px;
   font-weight: bold;
+  font-family: streetart_font;
+  color: #e99b49;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3 {
+  margin: 15px 0 0 0;
+  font-size: 50px;
+  width: 80%;
+  padding-left: 10%;
+  font-weight: bold;
+  font-family: streetart_font;
+  color: #ab5155;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h4 {
+  margin: 30px 0 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: streetart_font;
+  color: #e99b49;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.main-p {
+  margin: 30px 0 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 25px;
+  width: 80%;
+  padding-left: 10%;
 }
 
 .small{
  font-size: 20px;
 }
 
+#container0 {
+  margin: 480px 0 0 0;
+}
+
 .chapter-container {
   /* margin + padding = chapterContainerMargin in script.js */
   /* Important for scrolling! */
-  margin: 50px 0 0 0;
+  margin: 50px 0 20px 0;
   padding: 20px 0 0 0;
   text-align: center;
 }
@@ -83,11 +125,24 @@ h3 {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-
+  padding-right: 10px;
   /* Three lines that center vertically */
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.link {
+  color: #0000ff;
+  line-height: 10px;
+  font-size: 12px;
+  vertical-align: text-top;
+}
+
+.icon {
+  height: 20px;
+  line-height: 25px;
+  padding: 0 10px 5px 0;
 }
 
 .img-container {
@@ -111,6 +166,8 @@ h3 {
   text-align: center;
   font-size: 1.2em;
   padding: 0 5px;
+  font-family: streetart_font;
+  color: #0a0a0a;
 }
 
 .source {
@@ -119,7 +176,8 @@ h3 {
 }
 
 .description {
-  margin: 20px;
+  margin: 10px;
+  line-height: 25px;
   text-align: center;
   font-size: 11pt;
   padding: 20px;

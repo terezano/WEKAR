@@ -5,6 +5,8 @@ var constants = {
 	// Storymapap Info
   _mapTitle: 'Storymap Title',
   _mapSubtitle: 'Storymap Subtitle',
+  _mapParagraph1: 'Storymap Paragraph1',
+  _mapParagraph2: 'Storymap Paragraph2',
   // Credits
 	_authorName: 'Author Name',
 	_authorURL: 'Author Email or Website',

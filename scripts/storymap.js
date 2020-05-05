@@ -88,8 +88,11 @@ $(window).on('load', function() {
     var chapterContainerMargin = 70;
 
     document.title = getSetting('_mapTitle');
+    $('#title').append('<h2>PRŮVODCE</h2>');
     $('#title').append('<h3>' + getSetting('_mapTitle') + '</h3>');
-    $('#title').append('<small>' + getSetting('_mapSubtitle') + '</small>');
+    $('#title').append('<h4>' + getSetting('_mapSubtitle') + '</h4>');
+    $('#title').append('<p class="main-p">' + getSetting('_mapParagraph1') + '</p>');
+    $('#title').append('<p class="main-p">' + getSetting('_mapParagraph2') + '</p>');
 
     // Load tiles
     addBaseMap();
@@ -128,7 +131,7 @@ $(window).on('load', function() {
             icon: L.ExtraMarkers.icon({
               icon: 'fa-number',
               number: ++chapterCount,
-              markerColor: 'blue'
+              markerColor: 'orange'
             })
           }
         ));
@@ -200,17 +203,31 @@ $(window).on('load', function() {
       if (c['Year'] == '')
         year = 'nestálá expozice';
       
-      var ikona = '';
-      
       container
         .append('<p class="chapter-header">' + c['Chapter'] + ' ' + '(' + year + ')' + '</p>')
         .append('<p class="">' + c['Authors'] + '</p>')
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
         .append('<p class="description">' + c['Description'] + '</p>')
-        .append('<p class="">' + c['Instagram'] + '</div>')
-        .append('<div><i>' + ikona + '</i><a href="https://www.facebook.com/' + c['Facebook'] + '">' + c['Facebook'] + '</a></div>')
-        .append('<div><i>' + ikona + '</i><a href="' + c['Web'] + '">' + c['Web'] + '</a></div>');
+
+        if (c['Instagram'] !== "")
+          container.append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram'] + '/" class="link">' + '&#64;' + c['Instagram'] + '</a></div>')
+        
+        if (c['Facebook'] !== "")
+          container.append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook'] + '" class="link">' + c['Facebook'] + '</a></div>')
+        
+        if (c['Web'] !== "")
+          container.append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web'] + '" class="link">' + c['Web'] + '</a></div>');
+
+        container.append('<p></p>')
+        if (c['Instagram2'] !== "")
+          container.append('<div class="icon"><img src="./icons/ig.png" /><a href="https://www.instagram.com/' + c['Instagram2'] + '/" class="link">' + '&#64;' + c['Instagram2'] + '</a></div>')
+
+        if (c['Facebook2'] !== "")
+          container.append('<div class="icon"><img src="./icons/fb.png" /><a href="https://www.facebook.com/' + c['Facebook2'] + '" class="link">' + c['Facebook2'] + '</a></div>')
+
+        if (c['Web2'] !== "")
+          container.append('<div class="icon"><img src="./icons/web.png" /><a href="' + c['Web2'] + '" class="link">' + c['Web2'] + '</a></div>');
 
       $('#contents').append(container);
 
@@ -228,7 +245,7 @@ $(window).on('load', function() {
     }
 
     // For each block (chapter), calculate how many pixels above it
-    pixelsAbove[0] = -100;
+    pixelsAbove[0] = 0;
     for (i = 1; i < chapters.length; i++) {
       pixelsAbove[i] = pixelsAbove[i-1] + $('div#container' + (i-1)).height() + chapterContainerMargin;
     }
@@ -252,10 +269,10 @@ $(window).on('load', function() {
           currentlyInFocus = i;
 
           for (k = 0; k < pixelsAbove.length - 1; k++) {
-            changeMarkerColor(k, 'orange', 'blue');
+            changeMarkerColor(k, 'red', 'orange');
           }
 
-          changeMarkerColor(i, 'blue', 'orange');
+          changeMarkerColor(i, 'orange', 'red');
 
           // Remove overlay tile layer if needed
           if (map.hasLayer(overlay)) {
